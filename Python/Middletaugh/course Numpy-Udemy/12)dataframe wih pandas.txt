@@ -1,0 +1,39 @@
+import pandas as pd
+df=pd.read_csv(<the file>)
+type()
+df.head()
+df.tail()
+df.info()
+pd.DataFrame()
+del df(<col name>)
+<col name>.T
+<our dataframe>.index.name=<our rows' name>
+<our dataframe>.coloumns.name=<our cols' name>
+<our dataframe>.values
+
+
+
+
+https://youtu.be/pHKiEk59n-s
+found some examples from internet and practise with them , if need help watch the above video-i shariff
+
+
+make a data structure as a table
+code to show first five rows of the table
+"	"	"  two rows	"	"
+add new coloumn
+add indexes in the starts of each rows
+call a or more coloumn/s by using two different funcs
+change the locations of the coloumns
+output first row by cı-oding with titles
+fill the new coloumn above like newcol=x or newcol=[x,y,z,t,..]
+add second new coloumn by doing comparings with another coloumn
+remove a col.
+make a new data frame 
+take the transpose of this new data frame to change cols and rs
+give names to rs and cols
+convert the dataframe into a two dimentional series
+see what happens if we run this code:
+ <our_index=<our dataframe>.index
+ print(our_index)>
+

@@ -1,0 +1,25 @@
+import matplotlib.pyplot,numpy and pandas and dont forget to  show each step on the graph by calling show() function
+graph 1,2,3 for x axis and 2,4,6 for y axis using plot() function
+set the title
+set up labels' names
+examine fontdict that is inside the function "title"
+try to show integer values  on the ticks.
+show legend but set up label as 2x first.
+try to change the colour,marker,markersize, markeredge color,  linestyle,linewidth of the line
+search for short hand notation like 'b^--' indide  the plot()
+print x2 and x2 is np.arange(0,4.5,0.5)
+plot the graph of x2 to x2**2
+make the graph due to x2 as line graph till x=2 and dash graph from x=2
+resize the graph figure()
+we want to save our graph into to internal storage
+use comments to summaries of each steps
+show it with show()
+
+
+now bar chart
+make  labels and values definitions like A,B,C and 1,4,2 into the lists
+show the bar(plt.bar(list1,list2))
+set the figsize
+set the hatches .set_hatch('/') 
+also make hatches by using for loop """bar.set_hatches(patterns.pop())"""
+show()

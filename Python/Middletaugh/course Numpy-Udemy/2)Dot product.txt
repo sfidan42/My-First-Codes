@@ -1,0 +1,13 @@
+make two arrays and make scalar multiplication by using dot=0,for loot and zip function also with for i in range(len(array1)):
+
+np.sum(array1*array2)
+
+(a1*a2).sum()
+
+np.dot(a1,a2)
+
+a1.dot(a2)
+
+a @ b
+
+   

@@ -1,0 +1,6 @@
+define a dataframe with pandas dot read csv ()
+draw a histogram by defined thing
+plot it
+plot the box plot
+import the scatter matrix(from pandas.plotting import scatter_matrix)
+set alpha and figsize

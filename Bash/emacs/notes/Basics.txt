@@ -1,0 +1,24 @@
+Commands:
+ls :list current contents
+cd directory: change directory
+cd.. :change directory to the just back one.
+emacs filename: open filename in Emacs
+git add filename:begin tracking filename
+git commit -m "message":commit changes with message
+grade:(unique to this environment) runs grader on assignment in current directory
+git push:push to remote
+git pull:get changes from remote
+
+
+Emacs Commands: 
+Ctrl+x, Ctrl+f :find file
+Ctrl+x, 2:split the screen
+Ctrl+x, b:change to other (open) buffer
+Crtl+x, o:move between split windows
+Ctrl+x, Ctrl+s:save the file
+Ctrl+z:suspend emacs
+
+UNIX Commands:
+(typing) fg: continue suspended job.
+cat filename:print contents of filename
+

@@ -1,0 +1,16 @@
+importing numpy
+make a list
+make an array by using np
+print the elements of the list by using for loop
+"	"	"	" array "	"	"
+Add a new element to the list by using append
+"	"	"	" array " 	"
+subliminication of the list with another lisst with +
+" 	" 	"	array	"	"	"   +
+# arrays are considered vectors
+if we want to change elements of a list, we shall use for loop
+examine L2=[e+3 for e in L]
+try to output squares(**means that) of each element of the list and also of the array
+use np.sqrt(A)
+use np.log(A)
+...

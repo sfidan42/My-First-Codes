@@ -1,0 +1,6 @@
+X=np.random.randn(10000)
+plt.hist(X);#  put ; here or remove it and see the difference.
+
+make a tight ranges histogram by using bins inside the brackets of hist() with randn
+"	"	"	"	"	"	"	"	"	"      random
+

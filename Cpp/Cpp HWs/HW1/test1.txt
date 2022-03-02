@@ -1,0 +1,70 @@
+// Özgür Can TURNA 
+// 1316190037 
+// Date: 21.12.2019 
+// Development Environment: Visual Studio2019
+#include <iostream>
+
+using namespace std;
+
+bool isDigit(char c)
+{
+    if (c >= '0' && c <= '9')
+        return true;
+    else return false;
+}
+
+
+int main(int argc, char* argv[])
+{
+    char arr[] = "5ABCD1BCD1CDE";
+    int i = 0, k = 0;
+    int bastaki_sayi = 0;
+    int kafa_nın_bilgisi = 0;
+    int kollar[26][26] = { 0 };
+    int kafa[26] = { 0 };
+
+    bool sayı_gecildi = false;
+
+    for (; isDigit(arr[i]); i++)
+    {
+        bastaki_sayi = (bastaki_sayi * 10) + (arr[i] - '0');
+    }
+
+    while (arr[i] != '\0')
+    {
+        sayı_gecildi = false;
+
+        for (; !isDigit(arr[i]); ++i)
+        {
+            if (sayı_gecildi)
+            {
+                kollar[kafa_nın_bilgisi][arr[i] - 'A'] = 1;
+            }
+            else
+            {
+                kafa[arr[i] - 'A'] = 1;
+                sayı_gecildi = true;
+                kafa_nın_bilgisi = arr[i] - 'A';
+            }
+        }
+        i++;
+    }
+
+    for (int j = 0; j < 26; j++)
+    {
+        if (kafa[j])
+        {
+            cout << (char)(j + 65);
+
+            for (int k = 0; k < 26; k++)
+            {
+                if (kafa[j] && kollar[j][k])
+                {
+                    cout << char(k + 65);
+                    cout << endl;
+
+                }
+            }
+        }
+    }
+    return 0;

@@ -1,0 +1,139 @@
+
+
+#include <iostream>
+using namespace std;
+
+
+bool isDigit(char c);
+
+
+int main(int argc , char *argv[])
+{
+	char input[26] = "";
+	int graph[26][26] = { 0 };
+	int nodes[26] = { 0 };
+
+	int max_length = 0;
+	int first_alpha_index = 0;
+	int first_group_alpha_index = -1;
+	int alpha_index = 0;
+	bool first_alpha_flag = false;
+	string output = "";
+	string sort[26] = { "" };
+	int sort_index = 0;
+	string index = "";
+	int length_string = 0;
+
+	for (int i = 0; argv[1][i]!='\0'; i++)
+	{
+		input[i] = argv[1][i];
+	}
+
+	for (; isDigit(input[alpha_index]); alpha_index++)
+	{
+		max_length = (max_length * 10) + (input[alpha_index] - 48);
+		first_alpha_index++;
+
+	}
+
+	while (input[alpha_index] != '\0')
+	{
+		first_alpha_flag = false;
+
+		for (; !isDigit(input[alpha_index]); alpha_index++)
+		{
+
+			if (first_alpha_flag)
+			{
+				graph[first_group_alpha_index][input[alpha_index] - 'A'] = 1;
+
+			}
+			else
+			{
+				nodes[input[alpha_index] - 'A'] = 1;
+				first_alpha_flag = true;
+				first_group_alpha_index = input[alpha_index] - 'A';
+			}
+
+		}
+
+		alpha_index++;
+	}
+
+	
+
+	for (int i = 0; i < 26; i++)
+	{
+		if (nodes[i])
+		{
+			output.push_back(i + 'A');
+			
+
+			for (int j = 0; j < 26; j++)
+			{
+				if (nodes[i] && graph[i][j])
+				{
+
+					output.push_back(j + 'A');
+					
+					sort[sort_index] = output; 
+						
+						sort_index++;
+
+					output.pop_back();
+
+				}
+			}
+			output = "";
+
+		}
+
+
+	}
+
+
+
+
+	for (int i = 0; i < 26; i++)
+	{
+		if (sort[i][0] == input[first_alpha_index])
+		{
+			index = sort[i];
+			length_string = index.length();
+			length_string--;
+			for (int j = 0; j < 26 && sort[j] != ""; j++)
+			{
+				if (sort[j].length() < 3 && sort[j][0] != input[first_alpha_index] && index[length_string] == sort[j][0])
+				{
+					index.push_back(sort[j][1]);
+					sort[sort_index] = index;
+					index.pop_back();
+					sort_index++;
+					length_string = index.length();
+					length_string--;
+
+				}
+			}
+		}
+
+
+
+
+	}
+	cout << input[first_alpha_index] << endl;
+
+	for (int i = 0; i < 26; i++)
+	{
+		if (sort[i][0] == input[first_alpha_index])cout << sort[i] << endl;
+	}
+
+	return 0;
+}
+
+
+bool isDigit(char c)
+{
+	if (c >= '0' && c <= '9' || c == '\0') { return true; }
+	else { return false; }
+}
+

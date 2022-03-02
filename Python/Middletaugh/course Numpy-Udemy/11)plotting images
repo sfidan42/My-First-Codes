@@ -1,0 +1,24 @@
+read and show images commands
+
+imread-imshow
+
+use Image.open('im name') to address the image
+
+then use type() to call its type
+
+store the image as an array by using numpy
+
+code arr.shape
+
+plot the image by  using plt.imshow(arr)
+
+make the image into black and white using grey=arr.mean(axis=2)
+because we want to make the image into b and w but...
+
+check the shape
+
+plot the image with imshow and see what matplotlib colors the image! it is not grey(b and w)
+
+we should fix it using cmap inside the function plt.imshow(..., cmap=...)
+
+

@@ -1,0 +1,16 @@
+matplotlib.pyplot.plot(<Xseq>[,Yseq][,linestyle][,linewidth][,'marker'][,'color'][,label])
+plt.show()
+import matplotlib.pylot as plt
+plt.legend()
+plt.ylabel('Time(s)')
+plt.xlabel('Velocity m/s')
+plt.title('Velocity-Time graph')
+plt.xlim(5,25)
+plt.ylim(5,25)
+
+
+question draw the graph of y=2x+1 % y=2x^2+2,
+-where x is in range 1 to 10
+-the first line should be green and other should be red
+-the width of line should be 3 
+(numpy.arange([start,]stop[,step]))

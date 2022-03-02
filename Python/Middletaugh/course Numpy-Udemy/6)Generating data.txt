@@ -1,0 +1,11 @@
+make a zeros array 2*3 
+make a ones array 2*3
+make a tens array 2*3
+np.eye(3) guess what is this? imagine its pronounciation
+
+np.random.random(2,3) #this is about syntethic data. important!
+np.random.randn(2,3) #this includes negative numbers 
+
+didnt understand this session
+
+https://youtu.be/uhP7_Of5WX8 understood with that one

@@ -1,0 +1,24 @@
+necessary  libraries:
+import numpy as np
+import matplotlib.pylot as plt
+
+x=np.linspace(from,to,steps) #type some numbers
+y= #an equation by the kind of x
+print(plt.plot(x,y))
+
+#see
+
+
+
+
+
+
+plt.show()
+
+to label: plt.xlabel('....')
+to label other one: plt.ylabel('....')
+to make a title: plt.title('my title')#when you add";" just here see what happens
+
+
+
+

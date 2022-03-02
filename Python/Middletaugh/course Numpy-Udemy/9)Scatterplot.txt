@@ -1,0 +1,12 @@
+make a random data with randn by 100*2
+make a scatter by choosing two coloumn that are first and second one. plt.scatter(X[:,0],X[:,1])
+and print
+
+
+to different colors generate some random data 200*2 named X
+increase first 50 coloumns elements by 3
+Make a zeros coloumn by 200 named Y
+equalize first 50 coloumns with 1  Y[:50]=1
+plt.scatter(X[:,0],X[:,1],c=Y)
+And see
+

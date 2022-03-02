@@ -1,0 +1,24 @@
+2*2 matrix (List of the lists)
+L[0]
+L[0][1]
+
+try to do same things on an array
+A[0][1]
+A[0,1]
+
+try to find the first coloumn from A#(an array 2*2)
+try to find the Transpose #(A.T)
+
+np.exp(A)
+np.exp(L)
+
+np.linealg.det(A)
+np.linealg.inv(A)
+np.linealg.inv(A).dot(A)
+np.trace(A)
+np.diag(A)
+np.diag([1,4])
+np.linearalg.eig(A)#eigenvector
+
+
+np.allclose(...)

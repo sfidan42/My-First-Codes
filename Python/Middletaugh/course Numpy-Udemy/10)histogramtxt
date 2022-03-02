@@ -1,0 +1,4 @@
+generate random data by using randn in order to make 10000 numbers
+plt.hist()
+make the histogram to increase the bins by using bins
+generate random data by using random in order to make 10000 numbers

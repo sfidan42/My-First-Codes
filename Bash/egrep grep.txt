@@ -1,0 +1,18 @@
+egrep "\w" file.txt
+egrep "\W" file.txt
+egrep "\d" file.txt
+egrep "\D" file.txt
+egrep "\s" file.txt
+egrep "\S" file.txt
+egrep "[aeiou]" file.txt
+egrep "^[aeiou]" file.txt
+egrep "[e-q]" file.txt
+egrep "[e-qE-Q]" file.txt
+egrep "an*b" file.txt
+egrep "an\*b" file.txt
+egrep "North|South" file.txt
+egrep -n "t$" file.txt
+egrep -n "t" file.txt
+egrep "xy" file1.txt file2.txt
+egrep "^[AEIOU]{1}.*[aeiou]{1}$" file.txt
+grep "[aueiou]$" file.txt | wc -l

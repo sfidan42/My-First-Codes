@@ -1,0 +1,6 @@
+the admission fee at a small fair is $1.50 for chilren and $4.00 for adults  . On a certain day, 2200 people enter the fair and $5050 is collected. How many chilren and adults attended?
+Ax=b <=> x=A^(-1).b
+x=np.linalg.solve(A,b)
+x=np.linalg.inv(A).dot(b)
+
+

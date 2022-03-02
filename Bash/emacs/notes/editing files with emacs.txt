@@ -1,0 +1,23 @@
+ls
+cd
+emacs filename.txt
+Ctrl+s:incremental search forward
+Ctrl+l:sometimes screen doesnt redraw itself correctly ,this to redraw it
+Ctrl+r:incremental search backward
+Ctrl+x, u: undo the last change
+ctrl+space:set mark(after marking a text part ,we can undo changes on that part)
+Ctrl+a:move to beginning of the file
+Ctrl+e:move to end of the file
+Ctrl+k:cut (kill in emacs terminology) to end of line
+Ctrl+y:paste(yank in emacs terminology)
+Ctrl+w:cut(kill )region
+M+w: copy region
+M+y:replace previous paste (yank) with earlier cut (kill)
+M-/:complete current word
+
+Ctrl+x( :start the keyboard macro
+Ctrl+x) :finish defining keyboard macro
+Ctrl+x, e:repeat macro one time
+e:repeat the macro
+
+**IMPORTANT**: When using programs like emacs, be sure that if you suspend a process with ctrl-z that you always return to the session you started with "fg". Do NOT repeatedly start emacs sessions. This will cause your PPE to get shutdown, locking you out of the assignments until the next day

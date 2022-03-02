@@ -1,0 +1,13 @@
+make a data set by coding to read 'http://bit.ly/kaggletrain'
+print out the data set
+learn to use map() :a series method
+make a new coloumn named sex_num and make the col will be filled as 1s and 0s according to female is 0 and male is 1 recalling from sex col by using map() 
+let's compare sex and sex_num
+print out it using loc()
+apply is a function that has each elements in a series
+we want to calculate how many characters in the name col with apply(len)
+ceil numbers in Feil and write the values in new col by using a function that is apply(np.ceil)
+now print out with loc
+
+
+https://youtu.be/P_q0tkYqvSk
