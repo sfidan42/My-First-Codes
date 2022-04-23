@@ -1,22 +1,21 @@
 ﻿#include<iostream>
 using namespace std;
-int main()
+
+
+
+
+
+
+
+
+
+
+bool	ucbes(int sayi)
 {
-	int n;
-	int t = 0;
-
-	cout << "please input a number to learn which numbers are smaller than that your input number and can divide by 15: " << endl;
-	cin >> n;
-
-	for (int num = 0; num <= n; num++)
-	{
-		t++;
-		if (num % 3 == 0 && num % 5 == 0)
-		{
-			cout << "number " << t << " is " << num << endl;
-		}
-	}
-	return 0;
+	if(sayi % 5 == 0 || sayi %3 ==0)
+		return (true);
+	else
+		return (false);
 }
 
 
@@ -30,22 +29,23 @@ int main()
 
 
 
-//#include <iostream>
-//using namespace std;
-//void result(int n)
-//{
-//    for (int num = 0; num < n; num++)
-//    {
-//        if (num % 3 == 0 && num % 5 == 0)
-//            cout << num << " ";
-//
-//    }
-//}
-//int main()
-//{
-//    int n;
-//    cout << "input an integer: ";
-//    cin >> n;
-//    result(n);
-//    return 0;
-//}
+
+
+int main()
+{
+	int	sayilar[10] = {4, 21, 2,4 ,4 ,52,35,3 ,5,16};
+	
+	for(int i=0;i<10;i++)
+	{
+	
+	
+		if (    ucbes(sayilar[i])   )
+		
+	  		cout << sayilar[i] << " , 3 ün veya 5 in katıdır" << endl;
+	  
+		else
+		
+	  		cout << sayilar[i] << " , 3 ün veya 5 in katı değil" << endl;
+	
+	}
+}

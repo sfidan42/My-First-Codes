@@ -6,4 +6,4 @@ used c,cpp less
 
 know some python 
 
-am studying C in 42 Piscine currently
+done studying C in 42 Piscine currently
